@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MenJinHua</title>
+</head>
+<body>
+<canvas id="canvas" width = 640 height = 480>
+   Your Browser	Do Not Support Canvas.
+</canvas>
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="sprite.js"></script>
+<script type="text/javascript" src="poke.js"></script>
+<script src="tree.js" type="text/javascript" charset="utf-8"></script>		
+<script type="text/javascript">
+	$(document).ready(function() {
+		var canvas = $("#canvas")[0];
+		var ctx = canvas.getContext("2d");
+		DrawTree(ctx,10,0,0);
+		DrawTree(ctx,9,0,-100);
+	});
+</script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
